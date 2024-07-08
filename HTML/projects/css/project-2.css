@@ -1,0 +1,128 @@
+body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: aqua;
+}
+
+.form{
+    background-color: aqua;
+    border-radius: 30px;
+    height: 350px;
+    width: 350px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 40px black,-10px -10px 50px white ;
+
+    animation: down;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+
+}
+
+.icon{
+    height: 60px;
+    border-radius: 50px;  
+
+    
+    animation: down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+h3{
+    margin: 20px;
+    font-family:Verdana;
+
+    transition: all;
+    transition-duration: 1s;
+
+    
+    animation: down;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.input{
+    color:black;
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px;
+    padding: 10px;
+    box-shadow:inset 5px 5px 5px grey, inset -5px -6px 20px white;
+
+    transition: all;
+    transition-duration: 1s;
+
+    animation: up;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+
+
+}
+
+.btn{
+    border: none;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 7px;
+    width: 50%;
+    background-color:black;
+    color: white;
+    font-size: 14px;
+
+    box-shadow: 5px 5px 15px black , -5px -5px 15px white;
+
+
+    animation: up;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+}
+
+.input:hover{
+    transform: scale(1.1);
+}
+
+.btn:hover{
+    background-color: white;
+    color: black;
+}
+
+h3:hover{
+    letter-spacing: 3px;
+}
+
+@keyframes down{
+
+    0%{
+        transform: translate(0px, -250px);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+}
+
+@keyframes up{
+
+    0%{
+        transform: translate(0px, 250px);
+    }
+
+    100%{
+        transform: translate(0,0);
+    }
+}
