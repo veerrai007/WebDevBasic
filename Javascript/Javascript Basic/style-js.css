@@ -1,0 +1,34 @@
+.red{
+    background-color: red;
+}
+
+.blue{
+    background-color: blue;
+    color:red;
+}
+
+.black{
+    color: black;
+}
+
+.size{
+    font-size: 50px;
+}
+
+.bulbC{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    border: none;
+    border-radius: 50%;
+    position: relative;
+    left: 500px;
+}
+
+
+
+#btn{
+    position: relative;
+    left:440px ;
+    top: 130px;
+}
