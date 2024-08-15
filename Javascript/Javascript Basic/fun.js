@@ -194,9 +194,9 @@
 // }
 // arr=["veer","rahul","harry"]
 
-// multy(arr,(name)=>{
+// multy(arr,(str)=>{
     
-//     let  result = name.toUpperCase();
+//     let  result = str.toUpperCase();
 //     console.log(result)})
 
 //.................................Higher Order Function..............
@@ -211,9 +211,3 @@
 // console.log(multiplyByTwo(4))
 
 //..............................................
-
-
-
-
-
-

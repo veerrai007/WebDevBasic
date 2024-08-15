@@ -14,10 +14,10 @@
 
 //insertion in HTML using jS...........................
 
-// a=document.getElementsByTagName('div')[0];
+a=document.getElementsByTagName('div')[0];
 
-// let div = document.createElement('div');
-// div.innerHTML='<h1>Hwloooo</h1>';
+let div = document.createElement('div');
+div.innerHTML='<h1>Hwloooo</h1>';
 
 // a.appendChild(div);
 // a.prepend(div);
@@ -46,17 +46,23 @@
 
 
 //bulb...............
-b=document.getElementById('btn')
-a = document.getElementById('bulb');
+// b=document.getElementById('btn')
+// a = document.getElementById('bulb');
 
-b.onclick=function(){
+// b.onclick=function(){
+    //     a.classList.toggle('bulbC')
+    
+    // }
+   
+    
+
+
+
+    
+a = document.getElementById('bulb');
+setInterval(() => {
     a.classList.toggle('bulbC')
 
-}
-
-// setInterval(() => {
-//     a.classList.toggle('bulbC')
-
-// }, 500);
+}, 500);
 
 
