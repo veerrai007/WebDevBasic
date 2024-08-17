@@ -1,15 +1,15 @@
-// let a = document.getElementById('first');
+let a = document.getElementById('first');
 
-// a.onclick=function(){
-//     console.log("click hua");
-//     document.body.style.backgroundColor="blue";
-// }
+a.onclick=function(){
+    console.log("click hua");
+    document.body.style.backgroundColor="blue";
+}
 
-// let b = document.getElementById('second');
+let b = document.getElementById('second');
 
-// b.onmouseover= ()=>{
-//     alert("Don't touch Me");
-// }
+b.onmouseover= ()=>{
+    alert("Don't touch Me");
+}
 
 
 

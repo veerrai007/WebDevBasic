@@ -1,0 +1,163 @@
+*{
+    margin: 0%;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0%;
+}
+
+/* .item-1{
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+    background-color: white;
+    display:ruby;
+} */
+
+.box{
+    height: 35px;
+    width: 35px;
+    margin: 10px;    
+}
+
+.box:nth-child(even){
+    background-color:red;
+    animation: one 2s linear  infinite ;
+}
+.box:nth-child(odd){
+    background-color: red;
+    animation: two 2s linear  infinite ;
+}
+
+@keyframes one {
+    30%{
+        transform: scale(0.5);
+        /* transform: rotatey(120deg); */
+        /* background-color: red; */
+    }
+    
+    80%{
+        transform: scale(1.5);
+        /* transform: rotatey(240deg); */
+        /* background-color: black; */
+    }
+    
+    100%{
+        transform: scale(1);
+        /* transform: rotatey(360deg); */
+        /* background-color: greenyellow; */
+    }
+}
+@keyframes two {
+    30%{
+        transform: scale(1.5);
+        /* transform: rotateX(120deg); */
+        /* background-color: greenyellow; */
+    }
+    
+    80%{
+        transform: scale(0.5);
+        /* background-color: red; */
+        /* transform: rotateX(240deg); */
+    }
+    
+    100%{
+        /* background-color: black; */
+        transform: scale(1);
+        /* transform: rotateX(360deg); */
+    }
+}
+
+
+.item-2{
+    border: 1px solid black;
+    height: 50%;
+    width: 50%;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 
+    inset 5px 5px 10px skyblue,
+    inset 5px -5px 10px skyblue,
+    inset -5px 5px 10px skyblue,
+    inset -5px -5px 10px skyblue,
+    inset 10px 10px 10px lightblue,
+    inset -10px 10px 10px lightblue,
+    inset -10px -10px 10px lightblue,
+    inset 10px -10px 10px lightblue; 
+}
+
+#up{
+    position: absolute;
+    height: 5%;
+    width: 50%;
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+
+#down{
+    position: absolute;
+    height:50% ;
+    width: 5%;
+    background-color: aliceblue;
+    border-radius: 100%;
+}
+
+.btns{
+    background-color: aquamarine;
+    height: 10%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+    
+}
+
+.btns>button{
+    border: none;
+    background-color: black;
+    color:white;
+    font-size: large;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.on{
+    animation: rotate 1s linear infinite;
+}
+
+.slow{
+    animation: rotate 2s linear infinite;
+}
+
+.medium{
+    animation: rotate 1s linear infinite;
+}
+
+.fast{
+    animation: rotate 0.5s linear infinite;
+}
+
+@keyframes rotate {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        
+        transform: rotateZ(360deg);
+    }
+}
+
+
+
