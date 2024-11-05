@@ -5,6 +5,9 @@ let off = document.getElementById("off-btn");
 let slow = document.getElementById("slow-btn");
 let medium = document.getElementById("medium-btn");
 let fast = document.getElementById("fast-btn");
+let fan = document.getElementById("fan");
+let hot = document.getElementById("hot");
+let cold = document.getElementById("cold");
 
 on.onclick=function(){
     up.classList.add('on')
@@ -12,7 +15,8 @@ on.onclick=function(){
 }
 off.onclick=function(){
     up.classList.remove('on' ,'slow','medium', 'fast')
-    down.classList.remove('on', 'slow','medium', 'fast')    
+    down.classList.remove('on', 'slow','medium', 'fast')  
+    fan.classList.remove('hot','cold')  
 }
 slow.onclick=function(){
     if (up.getAttribute("class").includes("on")) { 
@@ -47,5 +51,16 @@ fast.onclick=function(){
         alert("Please,Switch on your fan")
     } 
 }
+
+hot.onclick=function(){
+        fan.classList.remove('cold')
+        fan.classList.add('hot')
+}
+cold.onclick=function(){
+        fan.classList.remove('hot')
+        fan.classList.add('cold')
+}
+
+
 
 
